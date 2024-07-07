@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth !important;
+}
+body{
+     background-color: #13433e !important; 
+     position: static;
+}
+/* navbar */
+nav {
+    /* background-color: #54887e !important; */
+    background-color: #13433e;
+    
+
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar{
+    position: sticky !important;
+    top: 0 !important;
+}
+.sticky{
+    background-color: #5d968a !important;
+    position: sticky !important ;
+    top: 0 !important;
+}
+nav .container-fluid .navbar-brand{
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFF;
+    font-family: cursive;
+    position: sticky;
+}
+ nav .navbar-toggler{
+     background-color: #7b8d897d !important;;
+     border: var(--bs-border-width) solid #ffffffa3;
+    
+}
+
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-nav .nav-link {
+  color: #fff3cdd1 ;
+  font-family: cursive;
+}
+.navbar-nav .nav-link:hover{
+    color: #eeff07;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #eeff07 !important;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        flex-direction: row-reverse;
+    }
+}
+/* end nav */
+
+
+
+/* start sec */
+
+
+    section{
+        padding: 8rem 3% 6rem !important;
+        
+  
+    } 
+    
+    .home{
+        display: flex;
+        align-items: center;
+         background: url('/images/ashadoul.jpg') no-repeat; 
+        background-position: right;
+    background-color:#13433e;
+    color: rgb(255 255 255 / 60%);
+  
+   
+}
+
+
+.home-content  h1{
+    font-size: 2rem;
+    color: rgb(255 255 255 / 77%);
+   
+    padding: 22px 0;
+}
+.home .text-animeta h3{
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: 0.7px #4b7d73;
+    background-image: linear-gradient(#ffc107, #78c5b6);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: homeBgText 4s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes homeBgText {
+    0%,10%,100% {
+        background-position: -40rem 0;
+    }
+    65%,85% {
+        background-position: 0 0;
+    }
+}
+
+.btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34rem;
+    height: 4rem;
+}
+.btn-box .btn{
+    position: relative;
+    background: #4b7d73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    margin-top: 30px;
+    height: 100%;
+    border: 0.2rem solid #4b7d73 !important;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+}
+.about {
+    padding: 3rem 11% 5rem !important;
+        transform: translateX(-100%);
+        background: url('/images/ashadoul.jpg') no-repeat; 
+        background-position: left;
+    background-color:#13433e;
+    transition: 1s;
+}
+.show-animate{
+    transform: translateX(0) !important;
+    transition: 1s !important;
+}
+
+.about  .about-content h4,.journey .container .row .journey-content h4{
+    
+    bottom: 20px;
+    color: #ffc107;
+    font-size: 26px;
+    font-family: cursive;
+    background: #e3e3be5c;
+    width: 142px;
+    /* height: 80px; */
+    border-radius: 11px 5px 32px 11px;
+    
+}
+.journey .container .row .journey-content h4{
+    border-radius: 43px 6px 32px 10px !important;
+
+}
+.about .about-content h2{
+color: #ffffffa3;
+margin-left: 17rem;
+}
+.about .about-content h2 span{
+    color: #ffc107;
+    font-family: cursive;
+}
+.about .about-content p{
+    color: #ffffffa3;
+   padding: 15px;
+  margin-left: 16rem;
+}
+
+.about .about-content .skills .col p{
+    padding: 2px;
+    font-weight: 500;
+    font-family: cursive;
+    color: #eeff07;
+}
+.contact{
+    background-color: #13433e;
+    padding: 0 0 20px 0 !important;
+    transform: translateX(100%); 
+    transition: 1s;
+}
+ .contact.show-animate{
+    transform: translateX(-88%) !important;
+    transition: 1s !important;
+} 
+.contact .row{
+    padding: 22px;
+    border: 1px solid #ffffffa3;
+    border-radius: 20px;
+}
+.contact .row:hover{
+    background: #e3e3be5c;
+}
+ .contact .col h4{
+color: #ffffffa3;
+}
+.contact .col p{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    color: #ffffffa3;
+}
+.contact .col p i{
+    padding: 1px 12px;
+    color: #78c5b6;
+}
+.contact .social-links a i{
+    color:#78c5b6 ;
+}
+.about .about-content .letter{
+    background:       #5081744a;
+    border-radius: 30px 0 26px 0;
+}
+/* services */
+.services {
+    background-color: #13433e;
+    padding: 32px 0 !important;
+
+}
+
+
+.services .container h1{
+  
+text-align: center;
+color: #ffffffa3;
+font-family: cursive;
+}
+.services .container h1::after{
+    content: '';
+    display: block;
+    background: #ffc107;
+    height: 3px;
+    width: 120px;
+    margin: 20px auto 50px;
+}
+.services .icon{
+    font-size: 30px;
+    margin: 20px auto;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ffc107;
+    border-radius: 50%;
+    color: #54887e;
+}
+.services h3 ,p{
+    font-family: cursive;
+    color: #ffffffa3;
+}
+.services .col-md-4{
+    cursor: pointer;
+    box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+    padding: 22px; 
+    transition: 1s;
+} 
+.services .col-md-4:hover{
+    background: linear-gradient(rgba(0,0,0,0.5),#ffc107);
+    transition: 1s ease;
+}
+
+/* journey */
+.journey{
+    background-color:#225751;
+    padding: 3rem 11% 5rem !important;
+transform: translateX(-100%);
+}
+
+.journey .container .row .journey-content h2{
+    color: #ffffffa3;
+    font-family: cursive;
+    margin: 46px 0;
+  position: relative;
+}
+.journey .container .row .journey-content h2::before{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    width: 60px;
+    height: 3px;
+    background-color: #a58526c8;
+    transform: translateX(-50%);
+    
+}
+.journey .container .row .journey-content h2::after{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 15%;
+    width: 20px;
+    height: 3px;
+    background-color:#ffc107;
+    transform: translateX(-50%);
+}
+.journey .container .row .content{
+    
+    display: flex;
+align-items: center;
+margin-bottom: 30px;
+    
+}
+.journey .container .row .content img{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+.journey .container .row .content h3{
+color: #ffc107;
+}
+.journey .container .row .date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.journey .container .row .date h3{
+    font-size: 20px;
+    font-family: cursive;
+    color: #ffc107b0;
+}
+.journey .container .row .date p{
+    font-size: 15px;
+}
+/* subscribe */
+.journey .subscribe{
+    margin: 0rem 14rem;
+    position: relative;
+    top: 50px;
+    right: 85px;
+    border: 1px solid #ffffffa3;
+   background: #225751;
+    
+    width: 545px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 1s;
+}
+.subscribe:hover{
+    background: #e3e3be5c;
+}
+ .journey .subscribe .content{
+    display: inline-flex;
+    padding: 10px 0 0 0;
+    
+}
+ .journey .subscribe .content h4{
+    padding: 10px 56px 0px 10px;
+    color: #ffc107;
+    font-family: cursive;
+}
+.subscribe .content input{
+    margin: 8px 35px 0px 0px;
+    border: 1px solid #dee2e6;
+    background: transparent;
+    border-radius: 9px;
+    outline: none;
+}
+.subscribe .content button{
+    border: 1px solid #dee2e6;
+    background: transparent;
+    padding: 10px;
+    border-radius: 15px;
+    color: #ffc107;
+    font-family: cursive;
+}
+/* to top */
+.to-top{
+    background: #4b7d73;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #13433e;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+.to-top.active{
+    bottom: 32px !important;
+    pointer-events: auto !important;
+    opacity: 1 !important;
+}
+
+
+
+@media (max-width:755px){
+    
+    .about .about-content h2 {
+        margin-left: 1rem;
+    }
+    .about .about-content p{
+        margin-left: 1rem;
+    }
+}
+@media (max-width:500px) {
+    .home-content .text-animeta h3{
+        font-size: 23px;
+    }
+    .home-content h1 {
+        font-size: 1.5rem;
+    }
+    .home-content .text-animeta p{
+        font-size: 14px;
+    }
+    .about{
+        padding: 3rem 0% 0rem !important;
+    }
+    .about .about-content .letter{
+        position: relative;
+        top: 10px;
+        right: 26px;
+        height: 250px;
+        width: 283px;
+        background: #5081744a;
+        border-radius: 83px 19px 119px 32px;
+    }
+   .about .about-content  .container{
+        margin: 6rem 0 0 0;
+        padding-right: 67px;
+    }
+    .services .container h1::after{
+        width: 60px;
+    }
+.journey .container .row .journey-content h2::before{
+top: 100px;
+left: 24%;
+ } 
+.journey .container .row .journey-content h2::after{
+top: 100px;
+left: 24%;
+}
+.journey .container .row .content{
+    flex-direction: column;
+    text-align: center;
+}
+.journey .container .row .content img{
+    margin: 0 auto 20px;
+
+}
+.subscribe{
+    margin: 0rem 5rem !important;
+    width: 200px !important;
+}
+.subscribe .content{
+display: block !important;
+}
+.subscribe .content h4{
+    padding: 10px 56px 0px 20px;
+}
+.subscribe .content button{
+margin-left: 12px;
+}
+.subscribe .content input{
+    margin: 10px;
+}
+.contact.show-animate{
+    transform: translateX(-100%) !important;
+}
+
